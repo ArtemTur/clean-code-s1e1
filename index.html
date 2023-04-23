@@ -8,53 +8,53 @@
   </head>
 
   <body class="body">
-    <div class="aaa">
-     <img class="img" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
-     <a class="more_inf" 
+    <header class="header">
+     <img class="header__img" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
+     <a class="header__link" 
          href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="centered-main-page-element">
-      <p id="topSectionForAddingElementToList">
-        <label class="toNewTask">Add Item</label>
-        <div class="task-row-wrapper">
-          <input id="new-task" class="task inputtext" type="text">
-          <button>Add</button>
+    </header>
+    <main class="main">
+      <p class="main__add" id="Adding">
+        <h3 class=" h3 h3_add-task">Add Item</h3>
+        <div class="main__add-row">
+          <input class="main__task main__task_input main__task_new" type="text">
+          <button class="add">Add</button>
         </div>
       </p>
       <h3 class="h3">Todo</h3>
-      <ul id="incompleteTasks">
+      <ul class="ul" id="incompleteTasks">
         <li class="li">
-         <input type="checkbox" class="liChek">
-         <label class="task liLab">Pay Bills</label>
-         <input type="text" class="task inp liInpText inputtext">
+         <input type="checkbox" class="check">
+         <label class="main__task main__task_poz">Pay Bills</label>
+         <input type="text" class="main__task hidden main__task_width main__task_input">
          <button class="edit">Edit</button>
          <button class="delete">
-          <img class="del-img" src="./remove.svg" alt="remove-arrow">
+          <img class="delete__img" src="./remove.svg" alt="remove-arrow">
          </button>
         </li>
-        <li class="editMode li">
-         <input type="checkbox" class="liChek">
-         <label class="task editModeLab liLab">Go Shopping</label>
-         <input type="text" value="Go Shopping" class="task editModeIn liInpText inputtext">
+        <li class="li editMode">
+         <input type="checkbox" class="check">
+         <label class="main__task main__task_poz hidden">Go Shopping</label>
+         <input type="text" value="Go Shopping" class="main__task main__task_width main__task_input">
          <button class="edit">Save</button>
          <button class="delete">
-          <img class="del-img" src="./remove.svg" alt="remove-arrow">
+          <img class="delete__img" src="./remove.svg" alt="remove-arrow">
          </button>
         </li>
       </ul>
       <h3 class="h3">Completed</h3>
-      <ul id="completed-tasks">
+      <ul class="ul ul_last" id="completed-tasks">
         <li class="li">
-         <input type="checkbox" checked class="liChek">
-         <label class="task lab liLab">See the Doctor</label>
-         <input type="text" class="task inp liInpText inputtext">
+         <input type="checkbox" checked class="check">
+         <label class="main__task main__task_poz">See the Doctor</label>
+         <input type="text" class="main__task hidden main__task_width main__task_input">
          <button class="edit">Edit</button>
          <button class="delete">
-          <img class="del-img" src="./remove.svg" alt="remove-arrow">
+          <img class="delete__img" src="./remove.svg" alt="remove-arrow">
          </button>
         </li>
       </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 
